@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Online</title>
+    <title>Python Web App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <textarea id="code" placeholder="Write your Python code here..."></textarea>
         <button id="run">Run Code</button>
+        <input type="file" id="fileInput" accept=".py" />
+        <input type="text" id="consoleInput" placeholder="Enter command..." />
+        <button id="consoleRun">Run Command</button>
         <pre id="output"></pre>
     </div>
     <script src="https://cdn.jsdelivr.net/pyodide/v0.18.1/full/pyodide.js"></script>
