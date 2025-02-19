@@ -16,9 +16,9 @@ async function main() {
         let code = codeArea.value;
         try {
             let output = await pyodide.runPythonAsync(code);
-            outputArea.textContent = output;
+            outputArea.textContent += `\n> ${output}`;
         } catch (err) {
-            outputArea.textContent = err;
+            outputArea.textContent += `\n> ${err}`;
         }
     };
 
